@@ -1,0 +1,6 @@
+framework module Pods_Crucible {
+  umbrella header "Pods-Crucible-umbrella.h"
+
+  export *
+  module * { export * }
+}

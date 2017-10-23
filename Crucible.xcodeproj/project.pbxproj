@@ -12,9 +12,12 @@
 		9F021FB81F9E13CC00E4BD53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB61F9E13CC00E4BD53 /* Main.storyboard */; };
 		9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */; };
 		9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */; };
+		D013095DE53C3D8B4485ED49 /* Pods_Crucible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A8684F146D75C7C216D48 /* Pods_Crucible.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153C4F3E616B1559F10D398E /* Pods-Crucible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crucible.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crucible/Pods-Crucible.release.xcconfig"; sourceTree = "<group>"; };
+		369A8684F146D75C7C216D48 /* Pods_Crucible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crucible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FAF1F9E13CB00E4BD53 /* Crucible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crucible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F021FB41F9E13CC00E4BD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F021FBC1F9E13CC00E4BD53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F021FBE1F9E13CC00E4BD53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3D022F93A2D1BCDAED83E2 /* Pods-Crucible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crucible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crucible/Pods-Crucible.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D013095DE53C3D8B4485ED49 /* Pods_Crucible.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		255EFA0CC5D5879813136FB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369A8684F146D75C7C216D48 /* Pods_Crucible.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F021FA61F9E13CB00E4BD53 = {
 			isa = PBXGroup;
 			children = (
 				9F021FB11F9E13CB00E4BD53 /* Crucible */,
 				9F021FB01F9E13CB00E4BD53 /* Products */,
+				E0AD585AEFCC4B8863F20639 /* Pods */,
+				255EFA0CC5D5879813136FB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Crucible;
 			sourceTree = "<group>";
 		};
+		E0AD585AEFCC4B8863F20639 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA3D022F93A2D1BCDAED83E2 /* Pods-Crucible.debug.xcconfig */,
+				153C4F3E616B1559F10D398E /* Pods-Crucible.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F021FC11F9E13CC00E4BD53 /* Build configuration list for PBXNativeTarget "Crucible" */;
 			buildPhases = (
+				49050CF111557AB02FFC55B9 /* [CP] Check Pods Manifest.lock */,
 				9F021FAB1F9E13CB00E4BD53 /* Sources */,
 				9F021FAC1F9E13CB00E4BD53 /* Frameworks */,
 				9F021FAD1F9E13CB00E4BD53 /* Resources */,
+				2BA5CD18B2DCFAED27AA17EE /* [CP] Embed Pods Frameworks */,
+				C478BABD836473C1B5FBEBDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BA5CD18B2DCFAED27AA17EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crucible/Pods-Crucible-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49050CF111557AB02FFC55B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C478BABD836473C1B5FBEBDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crucible/Pods-Crucible-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F021FAB1F9E13CB00E4BD53 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		9F021FC21F9E13CC00E4BD53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3D022F93A2D1BCDAED83E2 /* Pods-Crucible.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +362,7 @@
 		};
 		9F021FC31F9E13CC00E4BD53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153C4F3E616B1559F10D398E /* Pods-Crucible.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
