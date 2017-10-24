@@ -1,0 +1,15 @@
+//
+//  Crucible.pch
+//  Crucible
+//
+//  Created by David on 2017/10/24.
+//  Copyright © 2017年  chenfei. All rights reserved.
+//
+
+#ifndef Crucible_pch
+#define Crucible_pch
+
+//let kScreenWidth = UIScreen.main.bounds.width
+//let kScreenHeight = UIScreen.main.bounds.height
+
+#endif /* Crucible_pch */

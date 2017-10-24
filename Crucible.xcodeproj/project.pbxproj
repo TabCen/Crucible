@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639103351F9ECF4A00B94450 /* CRJsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639103341F9ECF4A00B94450 /* CRJsonHelper.swift */; };
+		639103371F9EE29600B94450 /* jsonTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 639103361F9EE29600B94450 /* jsonTest.json */; };
+		639103391F9F0CF500B94450 /* CRTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639103381F9F0CF500B94450 /* CRTestViewController.swift */; };
+		6391033C1F9F25DA00B94450 /* CRSingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391033A1F9F25DA00B94450 /* CRSingleTableViewCell.swift */; };
+		6391033D1F9F25DA00B94450 /* CRSingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6391033B1F9F25DA00B94450 /* CRSingleTableViewCell.xib */; };
 		9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */; };
 		9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */; };
 		9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */; };
@@ -19,6 +24,12 @@
 /* Begin PBXFileReference section */
 		153C4F3E616B1559F10D398E /* Pods-Crucible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crucible.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crucible/Pods-Crucible.release.xcconfig"; sourceTree = "<group>"; };
 		369A8684F146D75C7C216D48 /* Pods_Crucible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crucible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639103311F9ECC7600B94450 /* Crucible-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crucible-Prefix.pch"; sourceTree = "<group>"; };
+		639103341F9ECF4A00B94450 /* CRJsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRJsonHelper.swift; sourceTree = "<group>"; };
+		639103361F9EE29600B94450 /* jsonTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonTest.json; sourceTree = "<group>"; };
+		639103381F9F0CF500B94450 /* CRTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTestViewController.swift; sourceTree = "<group>"; };
+		6391033A1F9F25DA00B94450 /* CRSingleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSingleTableViewCell.swift; sourceTree = "<group>"; };
+		6391033B1F9F25DA00B94450 /* CRSingleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSingleTableViewCell.xib; sourceTree = "<group>"; };
 		9F021FAF1F9E13CB00E4BD53 /* Crucible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crucible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +61,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		639103321F9ECE7B00B94450 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				639103331F9ECF1C00B94450 /* jsonHelper */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		639103331F9ECF1C00B94450 /* jsonHelper */ = {
+			isa = PBXGroup;
+			children = (
+				639103361F9EE29600B94450 /* jsonTest.json */,
+				639103341F9ECF4A00B94450 /* CRJsonHelper.swift */,
+			);
+			path = jsonHelper;
+			sourceTree = "<group>";
+		};
+		6391033E1F9F271D00B94450 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6391033A1F9F25DA00B94450 /* CRSingleTableViewCell.swift */,
+				6391033B1F9F25DA00B94450 /* CRSingleTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		639103401F9F274C00B94450 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */,
+				9F508BDA1F9E2C01007360BF /* CRFirstViewController.xib */,
+				639103381F9F0CF500B94450 /* CRTestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		639103411F9F277400B94450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9F021FA61F9E13CB00E4BD53 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +126,7 @@
 		9F021FB11F9E13CB00E4BD53 /* Crucible */ = {
 			isa = PBXGroup;
 			children = (
+				639103321F9ECE7B00B94450 /* Tools */,
 				9F508BD81F9E2B63007360BF /* Class */,
 				9F508BD71F9E2B3C007360BF /* Base */,
 				9F508BD31F9E2A58007360BF /* Support */,
@@ -86,6 +141,7 @@
 				9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */,
 				9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */,
 				9F021FBE1F9E13CC00E4BD53 /* Info.plist */,
+				639103311F9ECC7600B94450 /* Crucible-Prefix.pch */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -101,8 +157,9 @@
 		9F508BD81F9E2B63007360BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */,
-				9F508BDA1F9E2C01007360BF /* CRFirstViewController.xib */,
+				639103411F9F277400B94450 /* Model */,
+				6391033E1F9F271D00B94450 /* View */,
+				639103401F9F274C00B94450 /* Controller */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -182,6 +239,8 @@
 				9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */,
 				9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */,
 				9F508BDC1F9E2C01007360BF /* CRFirstViewController.xib in Resources */,
+				6391033D1F9F25DA00B94450 /* CRSingleTableViewCell.xib in Resources */,
+				639103371F9EE29600B94450 /* jsonTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6391033C1F9F25DA00B94450 /* CRSingleTableViewCell.swift in Sources */,
+				639103351F9ECF4A00B94450 /* CRJsonHelper.swift in Sources */,
+				639103391F9F0CF500B94450 /* CRTestViewController.swift in Sources */,
 				9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */,
 				9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */,
 				9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */,
@@ -374,6 +436,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Crucible/Support/Crucible-Prefix.pch";
 				INFOPLIST_FILE = Crucible/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fyysp.Crucible;
@@ -390,6 +455,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Crucible/Support/Crucible-Prefix.pch";
 				INFOPLIST_FILE = Crucible/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fyysp.Crucible;
