@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */; };
-		9F021FB51F9E13CC00E4BD53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F021FB41F9E13CC00E4BD53 /* ViewController.swift */; };
-		9F021FB81F9E13CC00E4BD53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB61F9E13CC00E4BD53 /* Main.storyboard */; };
 		9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */; };
 		9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */; };
+		9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F508BD41F9E2AF7007360BF /* CRBaseViewController.swift */; };
+		9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */; };
+		9F508BDC1F9E2C01007360BF /* CRFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F508BDA1F9E2C01007360BF /* CRFirstViewController.xib */; };
 		D013095DE53C3D8B4485ED49 /* Pods_Crucible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A8684F146D75C7C216D48 /* Pods_Crucible.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		369A8684F146D75C7C216D48 /* Pods_Crucible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crucible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FAF1F9E13CB00E4BD53 /* Crucible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crucible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F021FB41F9E13CC00E4BD53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F021FB71F9E13CC00E4BD53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F021FBC1F9E13CC00E4BD53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F021FBE1F9E13CC00E4BD53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F508BD41F9E2AF7007360BF /* CRBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRBaseViewController.swift; sourceTree = "<group>"; };
+		9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFirstViewController.swift; sourceTree = "<group>"; };
+		9F508BDA1F9E2C01007360BF /* CRFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRFirstViewController.xib; sourceTree = "<group>"; };
 		DA3D022F93A2D1BCDAED83E2 /* Pods-Crucible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crucible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crucible/Pods-Crucible.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 				255EFA0CC5D5879813136FB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		9F021FB01F9E13CB00E4BD53 /* Products */ = {
 			isa = PBXGroup;
@@ -69,14 +72,39 @@
 		9F021FB11F9E13CB00E4BD53 /* Crucible */ = {
 			isa = PBXGroup;
 			children = (
+				9F508BD81F9E2B63007360BF /* Class */,
+				9F508BD71F9E2B3C007360BF /* Base */,
+				9F508BD31F9E2A58007360BF /* Support */,
+			);
+			path = Crucible;
+			sourceTree = "<group>";
+		};
+		9F508BD31F9E2A58007360BF /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */,
-				9F021FB41F9E13CC00E4BD53 /* ViewController.swift */,
-				9F021FB61F9E13CC00E4BD53 /* Main.storyboard */,
 				9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */,
 				9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */,
 				9F021FBE1F9E13CC00E4BD53 /* Info.plist */,
 			);
-			path = Crucible;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9F508BD71F9E2B3C007360BF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9F508BD41F9E2AF7007360BF /* CRBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F508BD81F9E2B63007360BF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */,
+				9F508BDA1F9E2C01007360BF /* CRFirstViewController.xib */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		E0AD585AEFCC4B8863F20639 /* Pods */ = {
@@ -117,6 +145,7 @@
 		9F021FA71F9E13CB00E4BD53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CR;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = " chenfei";
@@ -152,7 +181,7 @@
 			files = (
 				9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */,
 				9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */,
-				9F021FB81F9E13CC00E4BD53 /* Main.storyboard in Resources */,
+				9F508BDC1F9E2C01007360BF /* CRFirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F021FB51F9E13CC00E4BD53 /* ViewController.swift in Sources */,
+				9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */,
+				9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */,
 				9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,14 +249,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9F021FB61F9E13CC00E4BD53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F021FB71F9E13CC00E4BD53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,12 +374,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
-				INFOPLIST_FILE = Crucible/Info.plist;
+				INFOPLIST_FILE = Crucible/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fyysp.Crucible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,12 +390,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
-				INFOPLIST_FILE = Crucible/Info.plist;
+				INFOPLIST_FILE = Crucible/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fyysp.Crucible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CRBaseViewController.swift
 //  Crucible
 //
 //  Created by  chenfei on 2017/10/23.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CRBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
+    
 }
-
