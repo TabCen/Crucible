@@ -32,7 +32,8 @@ class CRFirstViewController: CRBaseViewController,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        
+        let subVC = CRTestViewController()
+        self.navigationController?.pushViewController(subVC, animated: true)
     }
     
 }
