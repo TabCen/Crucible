@@ -12,6 +12,8 @@
 		639103391F9F0CF500B94450 /* CRTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639103381F9F0CF500B94450 /* CRTestViewController.swift */; };
 		6391033C1F9F25DA00B94450 /* CRSingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391033A1F9F25DA00B94450 /* CRSingleTableViewCell.swift */; };
 		6391033D1F9F25DA00B94450 /* CRSingleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6391033B1F9F25DA00B94450 /* CRSingleTableViewCell.xib */; };
+		639CDA191FA16EA80051E53F /* CRFundationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CDA181FA16EA80051E53F /* CRFundationController.swift */; };
+		639CDA1E1FA179560051E53F /* UFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639CDA1D1FA179560051E53F /* UFO.swift */; };
 		9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */; };
 		9F021FBA1F9E13CC00E4BD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */; };
 		9F021FBD1F9E13CC00E4BD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F021FBB1F9E13CC00E4BD53 /* LaunchScreen.storyboard */; };
@@ -30,6 +32,8 @@
 		639103381F9F0CF500B94450 /* CRTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTestViewController.swift; sourceTree = "<group>"; };
 		6391033A1F9F25DA00B94450 /* CRSingleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRSingleTableViewCell.swift; sourceTree = "<group>"; };
 		6391033B1F9F25DA00B94450 /* CRSingleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CRSingleTableViewCell.xib; sourceTree = "<group>"; };
+		639CDA181FA16EA80051E53F /* CRFundationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFundationController.swift; sourceTree = "<group>"; };
+		639CDA1D1FA179560051E53F /* UFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFO.swift; sourceTree = "<group>"; };
 		9F021FAF1F9E13CB00E4BD53 /* Crucible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crucible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F021FB21F9E13CC00E4BD53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F021FB91F9E13CC00E4BD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				639103331F9ECF1C00B94450 /* jsonHelper */,
+				639CDA1F1FA1795B0051E53F /* functionHelper */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -92,8 +97,17 @@
 			children = (
 				9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */,
 				639103381F9F0CF500B94450 /* CRTestViewController.swift */,
+				639CDA181FA16EA80051E53F /* CRFundationController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		639CDA1F1FA1795B0051E53F /* functionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				639CDA1D1FA179560051E53F /* UFO.swift */,
+			);
+			path = functionHelper;
 			sourceTree = "<group>";
 		};
 		9F021FA61F9E13CB00E4BD53 = {
@@ -273,7 +287,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C478BABD836473C1B5FBEBDB /* [CP] Copy Pods Resources */ = {
@@ -300,11 +314,13 @@
 			files = (
 				6391033C1F9F25DA00B94450 /* CRSingleTableViewCell.swift in Sources */,
 				639103351F9ECF4A00B94450 /* CRJsonHelper.swift in Sources */,
+				639CDA1E1FA179560051E53F /* UFO.swift in Sources */,
 				639103391F9F0CF500B94450 /* CRTestViewController.swift in Sources */,
 				9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */,
 				9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */,
 				9F021FB31F9E13CC00E4BD53 /* AppDelegate.swift in Sources */,
 				9F508BE81F9F672E007360BF /* CRThirtyDaysModel.swift in Sources */,
+				639CDA191FA16EA80051E53F /* CRFundationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

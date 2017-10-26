@@ -14,11 +14,8 @@ class CRThirtyDaysModel: NSObject {
     var subTittle:String?
     
     func returnThirtyDays() -> NSArray {
-        let arr:NSArray = [["tittle":"Day01","subTittle":"第一天"],
-                           ["tittle":"Day01","subTittle":"第一天"],
-                           ["tittle":"Day01","subTittle":"第一天"]]
-//        if let temArr = CRThirtyDaysModel.
-        
+        let arr:NSArray = [["tittle":"Day01","subTittle":"第一天","class":"CRTestViewController"],
+                           ["tittle":"Day02","subTittle":"第二天","class":"CRFundationController"]]
         return arr
     }
     

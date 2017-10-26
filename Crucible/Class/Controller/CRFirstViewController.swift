@@ -33,8 +33,12 @@ class CRFirstViewController: CRBaseViewController,UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let dict:[String:String] = dataArr[indexPath.row] as! [String : String]
         
-        let subVC = CRTestViewController()
+        guard let myClassType = UFO.classFromString(dict["class"]!) as? UIViewController.Type else{
+            return
+        }
+        let subVC = myClassType.init()
         self.navigationController?.pushViewController(subVC, animated: true)
     }
     
@@ -53,7 +57,7 @@ extension CRFirstViewController : UITableViewDataSource{
         cell.backgroundColor = UIColor.white
         let dict:[String:String] = dataArr[indexPath.row] as! [String : String]
         
-        cell.textLabel?.text = "Day\(indexPath.row)"
+        cell.textLabel?.text = dict["tittle"]
         cell.detailTextLabel?.text = dict["subTittle"]
         return cell
     }
