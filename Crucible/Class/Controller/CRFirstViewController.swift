@@ -15,6 +15,8 @@ let CRFirstViewControllerCell = "CRFirstViewController_cell"
 
 class CRFirstViewController: CRBaseViewController,UITableViewDelegate {
     
+    let dataArr = CRThirtyDaysModel.init().returnThirtyDays()
+    
     var tableView : UITableView!
     
     override func viewDidLoad() {
@@ -43,14 +45,14 @@ class CRFirstViewController: CRBaseViewController,UITableViewDelegate {
 extension CRFirstViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return dataArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell :CRSingleTableViewCell = tableView.dequeueReusableCell(withIdentifier: CRFirstViewControllerCell) as! CRSingleTableViewCell
         cell.backgroundColor = UIColor.white
         cell.textLabel?.text = "Day\(indexPath.row)"
-        cell.detailTextLabel?.text = "hah"
+        cell.detailTextLabel?.text = dataArr[indexPath.row]["subTittle"]
         return cell
     }
     

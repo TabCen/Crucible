@@ -10,6 +10,17 @@ import UIKit
 
 class CRThirtyDaysModel: NSObject {
     
+    var tittle:String?
+    var subTittle:String?
+    
+    func returnThirtyDays() -> NSArray {
+        let arr:NSArray = [["tittle":"Day01","subTittle":"第一天"],
+                           ["tittle":"Day01","subTittle":"第一天"],
+                           ["tittle":"Day01","subTittle":"第一天"]]
+//        if let temArr = CRThirtyDaysModel.
+        
+        return arr
+    }
     
 
 }
