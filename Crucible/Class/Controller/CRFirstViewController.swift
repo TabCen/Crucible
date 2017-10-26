@@ -51,8 +51,10 @@ extension CRFirstViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell :CRSingleTableViewCell = tableView.dequeueReusableCell(withIdentifier: CRFirstViewControllerCell) as! CRSingleTableViewCell
         cell.backgroundColor = UIColor.white
+        let dict:[String:String] = dataArr[indexPath.row] as! [String : String]
+        
         cell.textLabel?.text = "Day\(indexPath.row)"
-        cell.detailTextLabel?.text = dataArr[indexPath.row]["subTittle"]
+        cell.detailTextLabel?.text = dict["subTittle"]
         return cell
     }
     
