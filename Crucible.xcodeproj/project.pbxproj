@@ -20,6 +20,7 @@
 		9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F508BD41F9E2AF7007360BF /* CRBaseViewController.swift */; };
 		9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */; };
 		9F508BE81F9F672E007360BF /* CRThirtyDaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F508BE71F9F672E007360BF /* CRThirtyDaysModel.swift */; };
+		9FF703FA1FA69A4700B4A70F /* CRCountDownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF703F91FA69A4700B4A70F /* CRCountDownController.swift */; };
 		D013095DE53C3D8B4485ED49 /* Pods_Crucible.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A8684F146D75C7C216D48 /* Pods_Crucible.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		9F508BD41F9E2AF7007360BF /* CRBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRBaseViewController.swift; sourceTree = "<group>"; };
 		9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRFirstViewController.swift; sourceTree = "<group>"; };
 		9F508BE71F9F672E007360BF /* CRThirtyDaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRThirtyDaysModel.swift; sourceTree = "<group>"; };
+		9FF703F91FA69A4700B4A70F /* CRCountDownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRCountDownController.swift; sourceTree = "<group>"; };
 		DA3D022F93A2D1BCDAED83E2 /* Pods-Crucible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crucible.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crucible/Pods-Crucible.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				9F508BD91F9E2C01007360BF /* CRFirstViewController.swift */,
 				639103381F9F0CF500B94450 /* CRTestViewController.swift */,
 				639CDA181FA16EA80051E53F /* CRFundationController.swift */,
+				9FF703F91FA69A4700B4A70F /* CRCountDownController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C478BABD836473C1B5FBEBDB /* [CP] Copy Pods Resources */ = {
@@ -315,6 +318,7 @@
 				6391033C1F9F25DA00B94450 /* CRSingleTableViewCell.swift in Sources */,
 				639103351F9ECF4A00B94450 /* CRJsonHelper.swift in Sources */,
 				639CDA1E1FA179560051E53F /* UFO.swift in Sources */,
+				9FF703FA1FA69A4700B4A70F /* CRCountDownController.swift in Sources */,
 				639103391F9F0CF500B94450 /* CRTestViewController.swift in Sources */,
 				9F508BDB1F9E2C01007360BF /* CRFirstViewController.swift in Sources */,
 				9F508BD51F9E2AF7007360BF /* CRBaseViewController.swift in Sources */,
